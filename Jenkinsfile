@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                bat 'cd'
+                bat 'xcopy "C:\Users\VPonPrasad\.jenkins\workspace\Test-Pipe-for-deployment(nginx)\build" "C:\Users\VPonPrasad\CICD\nginx-1.24.0\html\tempappServed" /h /i /c /k /e /r /y'
             }
         }
     }
