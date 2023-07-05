@@ -11,5 +11,10 @@ pipeline {
                 bat 'npm run build'
             }
         }
+        stage('Deploy'){
+            steps{
+                bar 'pwd'
+            }
+        }
     }
 }
