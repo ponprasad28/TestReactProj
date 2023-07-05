@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                bat 'pwd'
+                bat 'cd'
             }
         }
     }
